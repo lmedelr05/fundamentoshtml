@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z -Index</title>
+    <style>
+        div {
+            position: absolute;
+            background-color: aquamarine;
+        }
+        .one {
+            z-index: 4;
+        }
+        .two {
+            z-index: 6;
+        }
+        .red {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            z-index: 5;
+            top: 20px;
+        }
+        .blue {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            z-index: 4;
+        }
+        .yellow {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            z-index: 6;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="one">UTT-1</div>
+    <div class="two">DSM</div> -->
+    <section>
+        <div class="red">Red</div>
+        <div class="blue">Blue
+            <div class="yellow">Yellow</div>
+        </div>
+    </section>
+</body>
+</html>
